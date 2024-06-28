@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_detail"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints">
+
+                    <Button
+                        android:id="@+id/sidebarButton"
+                        android:layout_width="45dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/icon_shape" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/baseline_menu_24" />
+                </RelativeLayout>
+                <!--            icon container-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="90dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="ExtraText,MissingConstraints"
+                        tools:layout_editor_absoluteX="106dp"
+                        tools:layout_editor_absoluteY="43dp">
+
+                        <Button
+                            android:id="@+id/circular_button"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circular_button" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="48dp"
+                            android:layout_height="41dp"
+                            android:layout_alignStart="@+id/circular_button"
+                            android:layout_alignTop="@+id/circular_button"
+                            android:layout_alignEnd="@+id/circular_button"
+                            android:layout_alignBottom="@+id/circular_button"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="9dp"
+                            android:src="@drawable/card_10"
+                            android:translationZ="30dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        content 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/categories"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/view_all"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/bg"
+                    android:textSize="15sp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+            <!--        categories-->
+            <!--        top seller content-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- Item 1 -->
+                    <LinearLayout
+                        android:layout_width="367dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bar_color"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+                        <!-- Your item content here -->
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/card_9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="5dp"
+                                android:text="Coffee Khmer"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="បញ្ចុះតម្លៃ 50%"
+                                android:textColor="@color/variant"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="8dp"
+                            android:gravity="center"
+                            android:text="Follow"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="367dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bar_color"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+                        <!-- Your item content here -->
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/card_6" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="8dp"
+                                android:text="កាហ្វេទឹកដោះគោ"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="បញ្ចុះតម្លៃ 50%"
+                                android:textColor="@color/variant"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="8dp"
+                            android:gravity="center"
+                            android:text="Follow"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="367dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bar_color"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+                        <!-- Your item content here -->
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/card_5" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="8dp"
+                                android:text="Mocha Frappe"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="បញ្ចុះតម្លៃ 50%"
+                                android:textColor="@color/variant"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="8dp"
+                            android:gravity="center"
+                            android:text="Follow"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+<!--            top seller end -->
+
+
+
+            <!--        content 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="កាហ្វេពិសេស"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/view_all"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/bg"
+                    android:textSize="15sp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+            <!--        card content-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- First Card -->
+                    <RelativeLayout
+                        android:id="@+id/cardLayout1"
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:onClick="onCardClick"
+                        android:background="@drawable/card">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee1"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="បញ្ចុះតម្លៃ 40%💥      ⭐⭐⭐⭐"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="កូហ្វេស្នាដៃកូនខ្មែរ"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="2 $ 🛒"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- Second Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/logoshop"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ទិញ 1 ថែម 1 ភ្លាមៗ💥       ⭐⭐⭐"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Oder now"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ប្រម៉ូលសិនពិសេស"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="🛒"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- Third Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/card_7"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="បញ្ចុះតម្លៃ 20%💥      ⭐⭐⭐⭐"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="កាហ្វេដូង"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="2.5 $🛒"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- forth Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee19"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Free🎁💥                                    ⭐⭐⭐⭐"
+                                    android:textColor="@color/white"
+                                    android:textSize="16dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coffee"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="🛒"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!--        top seller content-->
+            <!--            card 2-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="New Coffee🛍️"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- First Card -->
+                    <RelativeLayout
+                        android:id="@+id/cardLayout2"
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:onClick="onCardClick"
+                        android:background="@drawable/card">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee17"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="បញ្ចុះតម្លៃ 10%💥      ⭐⭐⭐⭐"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ទឹកម្នាស់ធម្មជាតិ"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="1 $🛍️"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- Second Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee11"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="បញ្ចុះតម្លៃ 10%💥      ⭐⭐⭐⭐"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coffee Phnon Penh"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="2 $🛍️"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- Third Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee13"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="រស់ជាតិថ្មី💥       ⭐⭐⭐⭐ "
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coffee Black"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="2$🛍️"
+                                    android:textColor="@color/price"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- forth Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/card_8"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Free💥                ⭐⭐"
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="1 $🛍️"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <!--                end card2-->
+
+            <!--            card 3-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- First Card -->
+                    <RelativeLayout
+                        android:id="@+id/cardLayout3"
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:onClick="onCardClick"
+                        android:background="@drawable/card">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee20"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="⭐⭐⭐⭐⭐"
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="4 $💥"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- Second Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee_black"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New💥"
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Black Coffee"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="3 $🛍️"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- Third Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/brown"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New💥   "
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Brawn Sugar"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="2 $🛍️"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- forth Card -->
+                    <RelativeLayout
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/heart"
+                                android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="330dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/coffee18"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Free💥"
+                                    android:textColor="@color/variant"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="Price"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:text="1$🛍️"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <!--            end card3-->
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/sidebar"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+        <!-- Add your sidebar content here -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_shape"
+            android:orientation="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        app:cardCornerRadius="35dp"
+                        android:backgroundTint="@color/primary"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/navImage"
+                            android:src="@drawable/profile"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="My Shop Coffee"
+                            android:textSize="20dp"
+                            android:textColor="@color/accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/navName"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/accent"
+                    android:text="Va somnang"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/navEmail"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/accent"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="14sp"
+                    android:text="samnangv999@gmail.com" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/variant" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--        home-->
+                <LinearLayout
+                    android:id="@+id/homeButton"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/home"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+                    </Button>
+                    <TextView
+                        android:layout_marginHorizontal="35dp"
+                        android:layout_width="wrap_content"
+                        android:text="Home"
+                        android:gravity="center"
+                        android:textColor="@color/accent"
+                        android:textSize="18sp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--        setting-->
+                <LinearLayout
+                    android:id="@+id/settingButton"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/nav_setting"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+                    </Button>
+                    <TextView
+                        android:layout_marginHorizontal="35dp"
+                        android:layout_width="wrap_content"
+                        android:text="Setting"
+                        android:gravity="center"
+                        android:textColor="@color/accent"
+                        android:textSize="18sp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--        about us-->
+                <LinearLayout
+                    android:id="@+id/aboutUsButton"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/nav_about"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+                    </Button>
+                    <TextView
+                        android:layout_marginHorizontal="35dp"
+                        android:layout_width="wrap_content"
+                        android:text="About Us"
+                        android:gravity="center"
+                        android:textColor="@color/accent"
+                        android:textSize="18sp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/variant" />
+            <!-- logout-->
+            <LinearLayout
+                android:id="@+id/LogoutButton"
+                android:orientation="horizontal"
+                android:layout_marginVertical="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:background="@drawable/nav_logout"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                </Button>
+                <TextView
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_width="wrap_content"
+                    android:text="Logout"
+                    android:gravity="center"
+                    android:textColor="@color/accent"
+                    android:textSize="20sp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App coffee</string>
+    <string name="textview">សំណាងលក់កាហ្វេខ្មែរ</string>
+    <string name="sub_title">ហាងយើងខ្ញុំ មានលក់ គ្រាប់កាហ្វេឆ្ងាញ់ ធានាគុណភាពនិងរសជាតិ និងមានលក់ម៉ាស៊ីនឆុងកាហ្វេ
+អ៊ីតាលី ម៉ាស៊ីនកិនគ្រាប់កាហ្វេ៕</string>
+    <string name="button_text">Buy Now</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wallet">10.50 ETH</string>
+    <string name="categories">ប្រភេទ</string>
+    <string name="view_all">More...</string>
+</resources>
